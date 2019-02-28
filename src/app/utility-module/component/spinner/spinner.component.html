@@ -1,0 +1,9 @@
+<!-- Full Spinner -->
+<div id="fullloading" class="spinner-overlay" style="display: block;" *ngIf="overlay && display">
+  <div class="spinner-container">
+    <div class="loading"></div>
+  </div>
+</div>
+
+<!-- Partial Spinner -->
+<div class="loading" *ngIf="!overlay && display"></div>

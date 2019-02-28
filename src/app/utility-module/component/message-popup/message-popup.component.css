@@ -1,0 +1,151 @@
+.modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+
+.ancillaryModal h2 {
+  font-size: 16px;
+  padding: 30px 20px 0;
+}
+
+.ancillaryModal h2.error {
+  color: #c00;
+  text-align: center;
+  font-size: 30px;
+}
+
+.ancillaryModal p {
+  font-size: 12px;
+  text-align: left;
+  line-height: 22px;
+}
+
+.ancillaryModal .textcenter {
+  text-align: center;
+}
+
+.modal-content .ancillaryModalError p {
+  font-size: 16px;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  outline: 0;
+}
+
+@media (min-width: 769px) {
+  .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  .modal-sm {
+    width: 300px;
+  }
+}
+
+.modal-dialog {
+  margin: 5% auto;
+  width: inherit;
+  max-width: 600px;
+}
+
+.modal-footer {
+  border: 0;
+  padding: 15px 20px;
+}
+
+.modal-footer .btn + .btn {
+  margin-left: 15px;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .btn.primary,
+  .btn.secondary,
+  .btn.tertiary {
+    min-width: 140px;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn.primary,
+  .btn.secondary,
+  .btn.tertiary {
+    min-width: 150px;
+  }
+}
+
+.btn.primary {
+  color: white;
+  background-color: #e87600;
+}
+
+.btn.primary:hover {
+  background-color: #ffb340;
+}
+
+.btn.secondary {
+  color: #e87600;
+  background-color: transparent;
+  border: 1px solid #e87600;
+}
+
+.btn.secondary:hover {
+  border: 1px solid #ffb340;
+  color: #ffb340;
+}
+
+.btn.tertiary {
+  color: #378f7b;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+@media (min-width: 768px) {
+  .btn.tertiary {
+    min-width: 150px;
+  }
+}
+
+.btn.tertiary:hover {
+  border: 1px solid #b0b0b0;
+  color: #54b6bb;
+}
+
+.btn.primary.disabled {
+  color: white;
+  background-color: #dedede;
+  cursor: not-allowed;
+}
+
+.btn.secondary.disabled,
+.btn.tertiary.disabled {
+  color: #dedede;
+  border: 1px solid #ccc;
+  cursor: not-allowed;
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "artifactory",
+  "lib": {
+    "entryFile": "./src/index.ts",
+    "umdModuleIds": {
+      "@ngx-translate/core": "translateCore",
+      "@ngx-translate/http-loader": "translateHttpLoader",
+      "ngx-bootstrap": "ngxBootstrap",
+      "uuid": "uuid"
+    }
+  },
+  "whitelistedNonPeerDependencies": [
+    "@ngx-translate/core",
+    "@ngx-translate/http-loader",
+    "ngx-bootstrap",
+    "uuid",
+    "node-sass"
+  ]
+}

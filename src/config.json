@@ -1,0 +1,19 @@
+{
+  "environment": "local",
+  "url": {
+    "service": {
+      "public": {},
+      "protected": {}
+    },
+    "template": {
+      "public": {
+        "google": "https://www.google.com/"
+      },
+      "protected": {}
+    }
+  },
+  "i18n": {
+    "url": "",
+    "locale": "en-us"
+  }
+}

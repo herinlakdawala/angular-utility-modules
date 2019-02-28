@@ -1,0 +1,11 @@
+<div bsModal #messageModal="bs-modal" class="modal fade ancillaryModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-content modal-dialog" role="document">
+    <h2 class="error">{{modalTitle | translate}}</h2>
+    <div class="modal-body ancillaryModalError">
+      <p class="textcenter">{{modalDescription | translate}}</p>
+    </div>
+    <div class="modal-footer">
+      <button *ngFor="let action of modalActions; let i = index" class="btn"  id="button{{i+1}}" [ngClass]="{'primary btnRight' : action.isPrimary, 'secondary' : !action.isPrimary}" (click)= "performAction(action.callback)" >{{action.text | translate}}</button>
+    </div>
+  </div>
+</div>

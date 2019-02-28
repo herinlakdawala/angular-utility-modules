@@ -1,0 +1,31 @@
+{
+  "content": {
+    "header": {
+      "title": "Support",
+      "breadcrumb": {
+        "home": "Home",
+        "support": "Support"
+      },
+      "tabName": {
+        "testTab0": "Test 0",
+        "testTab1": "Test 1",
+        "testTab2": "Test 2",
+        "testTab3": "Test 3",
+        "testTab4": "Test 4",
+        "testTab5": "Test 5"
+      }
+    }
+  },
+  "common": {
+    "error": {
+      "serviceCall": {
+        "title": "ERROR",
+        "description": "Long error description goes here."
+      }
+    },
+    "label": {
+      "ok": "OK",
+      "cancel": "CANCEL"
+    }
+  }
+}
